@@ -6,7 +6,7 @@ Built Supervised Binary classification model to help patients to take precaution
 
 The dataset is from an ongoing cardiovascular study on residents of the town of Framingham, Massachusetts. The classification goal is to predict whether the patient has a 10-year risk of future coronary heart disease (CHD). The dataset provides the patients’ information. It includes over 4,000 records and 15 attributes.Each attribute is a potential risk factor. There are both demographic, behavioral, and medical risk factors.
 
-#Attributes
+# Attributes
 
 • Sex: male or female("M" or "F")
 
@@ -42,7 +42,7 @@ The dataset is from an ongoing cardiovascular study on residents of the town of 
 
 One of the major issues when dealing with unbalanced datasets relates to the metrics used to evaluate their model. Using simpler metrics like accuracy score can be misleading. In a dataset with highly unbalanced classes, the classifier will always “predict” the most common class without performing any analysis of the features and it will have a high accuracy rate, obviously not the correct one.
 
-#Handling Imbalanced Dataset
+# Handling Imbalanced Dataset
 
 The given data is highly imbalanced data so I have used SMOTE Technique to overcome this problem. SMOTE is the technique of handling imbalanced dataset by creating synthetic datapoints of minority class. Here class 1 is the minority class which is oversampled by SMOTE by synthetic datapoints.
 
@@ -52,11 +52,13 @@ New examples are synthesized from the existing examples. This is a type of data 
 
 Dependent Variable count (Before SMOTE)
 
-image
+![image](https://user-images.githubusercontent.com/102653523/209868662-51f7c53f-8a74-41e6-a821-9996c43cd05a.png)
+
 
 Dependent Variable count (After Sampling)
 
-image
+![image](https://user-images.githubusercontent.com/102653523/209868674-b2537aee-5ff1-4a7a-9a2d-89f23f37b186.png)
+
 
 # Model Implementaion and Metrics
 
@@ -72,10 +74,13 @@ For an Imbalanced dataset True_negative would be always high, if the majority cl
 
 Presicion Recall curves would be appropriate for Imbalanced dataset.
 
-#Evaluation
+# Evaluation
+
+![image](https://user-images.githubusercontent.com/102653523/209868476-e535b69b-8e3b-4c30-89b3-de2ae83ba2ec.png)
 
 
-#Conclusion
+
+# Conclusion
 
 * Achieved ROC-AUC score of 0.978 and used confusion matrix to visualize TP,TN,FP,FN. ln focus to reduce False Negatives model is designed.
 
